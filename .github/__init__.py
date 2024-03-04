@@ -3,7 +3,6 @@ import sgl.net
 import sgl.event
 import sgl.image
 import sgl.math
-td = "PGL Window"
 rect = 'rect'
 circle = 'circle'
 blue = (0, 0, 255)
@@ -16,8 +15,9 @@ def init():
     pygame.init()
 
 
-def cwindow(size):
+def cwindow(size, title="pySGL Window"):
     pygame.display.set_mode(size)
+    pygame.display.set_caption(title)
 
 
 def update():
